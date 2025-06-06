@@ -9,13 +9,14 @@ import javafx.stage.Stage;
 public class Main extends Application {
 	
     public static void main(String[] args) {
-//        launch(args);
+        launch(args);
     }
 	
     @Override
     public void start(Stage stage) {
     	//Section: stage (window?) size info
         stage.setFullScreen(true);
+        stage.setMaximized(false);
         Label label = new Label("Undone inner text");
         Scene scene = new Scene(label, 800, 600);
 
